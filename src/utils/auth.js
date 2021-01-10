@@ -27,6 +27,7 @@ export const isAuthenticated = () => {
 }
 
 export const login = () => {
+  console.log('function')
   if (!isBrowser) return
   auth.authorize()
 }
