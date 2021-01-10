@@ -1,12 +1,13 @@
 import React from 'react'
+import { getUser } from '../services/auth'
 
 const Profile = () => {
   return (
     <>
       <h1>Your profile</h1>
       <ul>
-        <li>Name: Your name will appear here</li>
-        <li>Email: And here goes the mail</li>
+        <li>Name: {getUser().name}</li>
+        <li>Email: {getUser().email}</li>
       </ul>
     </>
   )
